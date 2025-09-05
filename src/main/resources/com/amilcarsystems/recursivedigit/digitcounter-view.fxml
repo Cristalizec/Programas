@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.amilcarsystems.recursivedigit.controller.DigitCounterController"
+      spacing="15" alignment="CENTER">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <Label text="Contador de Dígitos" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+    <Label text="Ingresa un número:"/>
+    <TextField fx:id="numberInputField" promptText="Ejemplo: 1111"/>
+    <Button fx:id="calculateButton" text="Calcular dígitos"/>
+    <Label fx:id="resultLabel" text="" style="-fx-text-fill: blue; -fx-font-size: 14px;"/>
+</VBox>
